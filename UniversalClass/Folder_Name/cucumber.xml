@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="109.447328">
+    <testcase classname="SignUp Universal Class Website" name="valid details for Registration" time="0.694915">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+When user clicks on Subscribe...............................................passed
+And select desired course...................................................passed
+And user enters Anshula.....................................................passed
+And enters Tripathi.........................................................passed
+And enters anshula2197@gmail.com and 9039887576.............................passed
+And check the checkbox......................................................passed
+And clicks on SignUp........................................................passed
+Then successful SignUp is done..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="Invalid details for Registration" time="13.228375">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+When user clicks on Subscribe...............................................passed
+And select desired course...................................................passed
+And user enter invalid details..............................................passed
+And clicks on SignUp button.................................................passed
+Then user is not able to SignUpg............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="Successful Sign In" time="12.483125">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+When user clicks on Sign In.................................................passed
+And enter correct Email and Password........................................passed
+And clicks on Sign In.......................................................passed
+Then successful Sign In is done.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="Unsuccessful Sign In" time="14.012315">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+When user clicks on Sign In button..........................................passed
+And enter invalid Email and Password........................................passed
+And clicks on Sign In button................................................passed
+Then user is not able to Sign In............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="Password activation sent to mail" time="11.330787">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+Given User should be on home page...........................................passed
+When User open sign in function.............................................passed
+And Selects the forgot password.............................................passed
+Then Forgot passsword page opens............................................passed
+When User enter valid email.................................................passed
+And Click on reset password button..........................................passed
+Then Mail for reset password is received....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="Password activation is not received" time="11.493168">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+Given User should be on home page...........................................passed
+When User open sign in function.............................................passed
+And Selects the forgot password.............................................passed
+Then Forgot passsword page opens............................................passed
+When User enter invalid email...............................................passed
+And Click on reset password button..........................................passed
+Then Error message should be displayed for it...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="search the course on home page" time="19.51754">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+When user enter course in search box........................................passed
+Then user can see the related course........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="search the course by browse course" time="14.379096">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+When user enter course in search box by after clicking browse course........passed
+Then user can see the available course......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SignUp Universal Class Website" name="search the course for invalid data" time="12.308007">
+        <system-out><![CDATA[Given user navigates to website.............................................passed
+When user enter random data or unavailable course...........................passed
+Then user can not see the courses...........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
